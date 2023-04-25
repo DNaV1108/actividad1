@@ -1,0 +1,11 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <label for="correo">E-mail:</label>
+    <input type="email" name="correo" id="correo" formControlName="correo">
+    <br>
+    <label for="asunto">Asunto:</label>
+    <input type="text" name="asunto" id="asunto" formControlName="asunto">
+    <br>
+    <textarea type="text" name="mensaje" id="mensaje" formControlName="mensaje" rows="10" cols="50" placeholder="Escribe el mensaje aquí"></textarea>
+    <br>
+    <button type="submit" name="enviar" id="enviar">Enviar</button>
+</form>
